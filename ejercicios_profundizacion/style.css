@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
-
 body {
+  font-family: 'Macondo', cursive;
   height: 100%;
   width: 100vw;
   background-image: radial-gradient(
@@ -16,14 +17,27 @@ body {
     #161718
   );
 }
-
-/* ----------- ALUMNO ----------------- */
-/* Aca debe colocar los estilos necesarios para generar el layout
- que se ve en la imagen*/
-
-/* ------------------------------------ */
-
-/* Color de fondo según tipo */
+p{
+  color: white;
+}
+.container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+}  
+.container > div {
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
 .normal {
   background: radial-gradient(
     circle,
@@ -32,7 +46,7 @@ body {
   );
 }
 .agua {
-  background: radial-gradient(
+    background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
     rgba(99, 144, 240, 1) 100%
